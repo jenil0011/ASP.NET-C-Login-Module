@@ -1,0 +1,366 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36591381-FCE6-4342-B625-000066597643}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoginRegisterActiveAccount</RootNamespace>
+    <AssemblyName>LoginRegisterActiveAccount</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44360</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivateAccount.aspx" />
+    <Content Include="admin\admin_activateaccount.aspx" />
+    <Content Include="admin\admin_changepassword.aspx" />
+    <Content Include="admin\admin_forgotpassword.aspx" />
+    <Content Include="admin\admin_home.aspx" />
+    <Content Include="admin\admin_login.aspx" />
+    <Content Include="admin\admin_logout.aspx" />
+    <Content Include="admin\admin_register.aspx" />
+    <Content Include="admin\admin_resetpassword.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style1.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\about-img.svg" />
+    <Content Include="images\b1.png" />
+    <Content Include="images\b2.png" />
+    <Content Include="images\b3.png" />
+    <Content Include="images\b4.png" />
+    <Content Include="images\b5.png" />
+    <Content Include="images\b6.png" />
+    <Content Include="images\b7.png" />
+    <Content Include="images\contact.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\empty-cart.png" />
+    <Content Include="images\heart.gif" />
+    <Content Include="images\Heart.svg" />
+    <Content Include="images\home-bg.jpg" />
+    <Content Include="images\home.jpg" />
+    <Content Include="images\homeimg1.png" />
+    <Content Include="images\homeimg2.png" />
+    <Content Include="images\homeimg3.png" />
+    <Content Include="images\icon-1.png" />
+    <Content Include="images\icon2.png" />
+    <Content Include="images\icon3.png" />
+    <Content Include="images\icon4.png" />
+    <Content Include="images\icon5.png" />
+    <Content Include="images\icon6.png" />
+    <Content Include="images\icon7.png" />
+    <Content Include="images\icon8.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\man.png" />
+    <Content Include="images\pic-1.png" />
+    <Content Include="images\pic-2.png" />
+    <Content Include="images\pic-3.png" />
+    <Content Include="images\pic-4.png" />
+    <Content Include="images\pic-5.png" />
+    <Content Include="images\pic-6.png" />
+    <Content Include="images\profile.png" />
+    <Content Include="images\register.png" />
+    <Content Include="images\review.png" />
+    <Content Include="images\se.png" />
+    <Content Include="images\system-outline-6-shopping.gif" />
+    <Content Include="images\toy-shop.png" />
+    <Content Include="images\toymania %282%29.jpeg" />
+    <Content Include="images\toymania.jpeg" />
+    <Content Include="images\update.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\wishlist.png" />
+    <Content Include="js\script.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="staff\staff_activateaccount.aspx" />
+    <Content Include="staff\staff_changepassword.aspx" />
+    <Content Include="staff\staff_forgotpassword.aspx" />
+    <Content Include="staff\staff_home.aspx" />
+    <Content Include="staff\staff_login.aspx" />
+    <Content Include="staff\staff_logout.aspx" />
+    <Content Include="staff\staff_register.aspx" />
+    <Content Include="staff\staff_resetpassword.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivateAccount.aspx.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivateAccount.aspx.designer.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_activateaccount.aspx.cs">
+      <DependentUpon>admin_activateaccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_activateaccount.aspx.designer.cs">
+      <DependentUpon>admin_activateaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_changepassword.aspx.cs">
+      <DependentUpon>admin_changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_changepassword.aspx.designer.cs">
+      <DependentUpon>admin_changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_forgotpassword.aspx.cs">
+      <DependentUpon>admin_forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_forgotpassword.aspx.designer.cs">
+      <DependentUpon>admin_forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_home.aspx.cs">
+      <DependentUpon>admin_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_home.aspx.designer.cs">
+      <DependentUpon>admin_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_logout.aspx.cs">
+      <DependentUpon>admin_logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_logout.aspx.designer.cs">
+      <DependentUpon>admin_logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_register.aspx.cs">
+      <DependentUpon>admin_register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_register.aspx.designer.cs">
+      <DependentUpon>admin_register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_resetpassword.aspx.cs">
+      <DependentUpon>admin_resetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_resetpassword.aspx.designer.cs">
+      <DependentUpon>admin_resetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_activateaccount.aspx.cs">
+      <DependentUpon>staff_activateaccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_activateaccount.aspx.designer.cs">
+      <DependentUpon>staff_activateaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_changepassword.aspx.cs">
+      <DependentUpon>staff_changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_changepassword.aspx.designer.cs">
+      <DependentUpon>staff_changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_forgotpassword.aspx.cs">
+      <DependentUpon>staff_forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_forgotpassword.aspx.designer.cs">
+      <DependentUpon>staff_forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_home.aspx.cs">
+      <DependentUpon>staff_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_home.aspx.designer.cs">
+      <DependentUpon>staff_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_login.aspx.cs">
+      <DependentUpon>staff_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_login.aspx.designer.cs">
+      <DependentUpon>staff_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_logout.aspx.cs">
+      <DependentUpon>staff_logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_logout.aspx.designer.cs">
+      <DependentUpon>staff_logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_register.aspx.cs">
+      <DependentUpon>staff_register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_register.aspx.designer.cs">
+      <DependentUpon>staff_register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\staff_resetpassword.aspx.cs">
+      <DependentUpon>staff_resetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\staff_resetpassword.aspx.designer.cs">
+      <DependentUpon>staff_resetpassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\empty-bag.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51126</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44360/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
